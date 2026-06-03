@@ -322,11 +322,10 @@
       font-weight: 600;
     }
 
-    /* TIMELINE */
+    /* TIMELINE — vertical stack only */
     .timeline {
       display: flex;
       flex-direction: column;
-      gap: 0;
       max-width: 780px;
     }
     .tl-item {
@@ -356,6 +355,7 @@
       background: var(--border);
       flex: 1;
       margin-top: 6px;
+      min-height: 20px;
     }
     .tl-item:last-child .tl-line { display: none; }
     .tl-date {
@@ -416,6 +416,16 @@
       color: var(--text-muted);
       line-height: 1.6;
       margin-bottom: 14px;
+    }
+    .action-card .action-note {
+      font-size: 12px;
+      color: var(--green-dark);
+      background: rgba(4,106,56,0.08);
+      border-radius: 4px;
+      padding: 8px 10px;
+      margin-bottom: 12px;
+      line-height: 1.5;
+      font-style: italic;
     }
     .action-link {
       font-size: 13px;
@@ -509,7 +519,7 @@
   <div class="hero-inner">
     <div class="hero-eyebrow">Arlington Heights Community Notice</div>
     <h1>Protect Our Community from the St. Viator Stadium Project</h1>
-    <p>St. Viator High School has applied to build a large-scale athletic complex — including a full stadium, 8-lane track, grandstands, permanent lighting, tennis courts, and expanded parking — directly bordering established residential neighborhoods in Arlington Heights. A public hearing is anticipated sometime in 2026. The time to act is now.</p>
+    <p>St. Viator High School has applied to build a large-scale athletic complex — including a full stadium, 8-lane track, grandstands, permanent lighting, tennis courts, and expanded parking — directly bordering established residential neighborhoods in Arlington Heights. A public hearing is anticipated this summer. The time to act is now.</p>
     <div class="hero-actions">
       <a class="btn-primary" href="https://www.change.org/p/against-st-viator-backyard-stadium-project">Sign the Petition</a>
       <a class="btn-outline" href="https://www.vah.com/government/departments/planning___community_development/developments___projects_/saint_viator_project.php">Village of AH Project Page</a>
@@ -529,7 +539,7 @@
 <section id="facts">
   <div class="section-inner">
     <div class="section-eyebrow">What's Proposed</div>
-    <h2>The Facts About the Backyard Stadium Project</h2>
+    <h2>The Facts About the Backyard Project</h2>
     <div class="fact-grid">
       <div class="fact-card">
         <div class="fact-card-title">What It Includes</div>
@@ -541,7 +551,7 @@
       </div>
       <div class="fact-card">
         <div class="fact-card-title">Who Uses It</div>
-        <p>Fewer than 25% of current students are local to Arlington Heights. The majority travel from as far as Chicago — meaning most users have no investment in our community streets or neighborhood safety.</p>
+        <p>Per St. Viator's own Director of Admissions, fewer than 25% of current students are local to Arlington Heights. The majority travel from as far as Chicago — meaning most users have no investment in our community streets or neighborhood safety.</p>
       </div>
       <div class="fact-card">
         <div class="fact-card-title">Tax Status</div>
@@ -553,7 +563,7 @@
       </div>
       <div class="fact-card">
         <div class="fact-card-title">Where Things Stand</div>
-        <p>The Special Use application was filed January 22, 2026. No variances have been approved. The Village is in active review. Once the plans have reached their “final draft” stage, a hearing date will be scheduled and the plans will then be FOIABLE. St. Viator's stated construction timeline is their own assumption — not a Village confirmation.</p>
+        <p>The Special Use application was filed January 22, 2026. No variances have been approved. The Village is in active review. Multiple FOIA requests by residents for preliminary documents have been denied. St. Viator's stated construction timeline is their own assumption — not a Village confirmation.</p>
       </div>
     </div>
   </div>
@@ -567,24 +577,24 @@
 
     <div class="incident-callout">
       <div class="incident-label">Recent Incident — May 2026</div>
-      <p>Approximately 50 neighbor yard signs were systematically stolen from private front yards overnight. Doorbell camera footage shows an individual entering private yards around 2:40 AM, removing signs by hand, assisted by someone in a white Ford Explorer. Police reports have been filed. This behavior has been formally reported to the Village of Arlington Heights Plan Commission and Village Board.</p>
+      <p>Approximately 50 neighbor yard signs were systematically stolen from private front yards overnight. Doorbell camera footage shows what appears to be a student-aged individual entering private yards around 2:40 AM, removing signs by hand, assisted by someone in a white Ford Explorer. Police reports have been filed. This behavior has been formally reported to the Village of Arlington Heights Plan Commission and Village Board. Regardless of who is ultimately responsible, neighbors feel targeted and intimidated for exercising their First Amendment rights.</p>
     </div>
 
     <div class="concerns-list">
       <div class="concern">
-        <h3>Residential Character & Quality of Life</h3>
-        <p>The scale of this project means near year-round, daily activity — football, soccer, lacrosse, tennis, and track practices, plus games, tournaments, and marching band events. This is not 5 night games a year. Daily practices, large crowds, stadium noise, and light pollution will permanently alter the character of the surrounding neighborhoods. Arlington Heights residents chose these communities specifically for their quiet, residential character.</p>
+        <h3>Residential Character &amp; Quality of Life</h3>
+        <p>The scale of this project means near year-round, daily activity — football, soccer, lacrosse, tennis, and track practices, plus games, tournaments, and marching band events. This is not 5 night games a year. Large crowds, stadium noise, and light pollution will permanently alter the character of the surrounding neighborhoods. Arlington Heights residents chose these communities specifically for their quiet, residential character.</p>
       </div>
       <div class="concern">
-        <h3>Traffic & Safety</h3>
-        <p>Oakton and Dryden are already busy during peak school hours. A 2,000-person stadium will multiply the volume, duration, and unpredictability of that traffic. Opposing teams, unfamiliar visitors, and crowds who don't know Arlington Heights will cut through neighborhoods, park in front of homes, and turn around in driveways. Plans cannot account for people who ignore the rules.</p>
+        <h3>Traffic &amp; Safety</h3>
+        <p>Oakton and Dryden are already dangerous during peak school hours — with screeching tires, illegal turns, and speeding on residential streets that St. Viator has done little to address despite years of resident complaints. A 2,000-person stadium will multiply the volume, duration, and unpredictability of that traffic. Opposing teams, unfamiliar visitors, and crowds who don't know Arlington Heights will cut through neighborhoods, park in front of homes, and turn around in driveways. Plans cannot account for people who ignore the rules.</p>
       </div>
       <div class="concern">
         <h3>Parking Overflow</h3>
-        <p>St. Viator claims adequate on-site parking — but students already choose street parking over the lot today. Athletic event visitors will do the same at far greater scale. Without strict, enforced no-parking zones on surrounding streets, overflow is inevitable. Off-site parking programs only work when enforced — and St. Viator's track record of enforcement is not encouraging.</p>
+        <p>St. Viator claims adequate on-site parking — but students already choose street parking over the lot today, for convenience. Athletic event visitors will do the same at far greater scale. Without strict, enforced no-parking zones on surrounding streets, overflow is inevitable. Off-site parking programs only work when enforced — and St. Viator's track record of enforcement is not encouraging.</p>
       </div>
       <div class="concern">
-        <h3>Noise & Light Pollution</h3>
+        <h3>Noise &amp; Light Pollution</h3>
         <p>Neighbors can already hear the distant noise of Prospect and Hersey on game nights. Now put that same level of noise — high-volume speakers, PA systems, crowds, and music — at the center of our neighborhoods. Even today, music from St. Viator practices carries throughout the neighborhood despite school administrators claiming they tell coaches to keep it down. Permanent stadium lighting adjacent to homes will affect sleep, health, and daily quality of life for residents of all ages.</p>
       </div>
       <div class="concern">
@@ -592,7 +602,7 @@
         <p>The school's plan includes commitments on lighting, sound, traffic, and landscaping. But these are promises, not binding enforceable commitments. Once built, enforcement falls to the same institution that currently acknowledges noise violations and does nothing to stop them. "Best case scenario" assurances will not hold on a busy Friday night game.</p>
       </div>
       <div class="concern">
-        <h3>Property Values & Long-Term Precedent</h3>
+        <h3>Property Values &amp; Long-Term Precedent</h3>
         <p>A stadium-adjacent address — with regular large crowds, nighttime events, and ongoing noise — creates real risk of reduced property values and buyer hesitation. And once approved, future expansions or increased permitted hours become far more likely, further eroding residents' ability to protect their community.</p>
       </div>
     </div>
@@ -624,6 +634,7 @@
     <div class="section-eyebrow">Where Things Stand</div>
     <h2>Project Timeline</h2>
     <div class="timeline">
+
       <div class="tl-item">
         <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
         <div>
@@ -631,6 +642,7 @@
           <div class="tl-desc">St. Viator first proposes a stadium complex. The Village requires written justification for Special Use Permit amendments. The project does not move forward at that time.</div>
         </div>
       </div>
+
       <div class="tl-item">
         <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
         <div>
@@ -638,13 +650,15 @@
           <div class="tl-desc">St. Viator presents preliminary plans at the Arlington Heights Plan Commission under the rebranded name "Backyard Project." Neighbors begin attending meetings and raising formal concerns.</div>
         </div>
       </div>
+
       <div class="tl-item">
         <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
         <div>
           <div class="tl-date">December 3, 2025</div>
-          <div class="tl-desc">St. Viator hosts a neighborhood open house. 175 attendees. Formal opposition letters submitted to the Plan Commission and Village Board by multiple residents.
+          <div class="tl-desc">St. Viator hosts a neighborhood open house. 175 attendees. Formal opposition letters submitted to the Plan Commission and Village Board by multiple residents. FOIA requests for preliminary documents are subsequently denied.</div>
         </div>
       </div>
+
       <div class="tl-item">
         <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
         <div>
@@ -652,13 +666,15 @@
           <div class="tl-desc">St. Viator formally submits Special Use application to the Village of Arlington Heights. Active review begins with the Department of Planning &amp; Community Development.</div>
         </div>
       </div>
+
       <div class="tl-item">
         <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
         <div>
           <div class="tl-date">Spring 2026</div>
-          <div class="tl-desc">Planning Commission round one review comments submitted to St. Viator. No public hearing date set yet. No variance approvals granted - this can only happen by the Village Board of Trustees.</div>
+          <div class="tl-desc">Plan Commission round one review comments submitted to St. Viator. No public hearing date set. No variance approvals granted — this can only happen by the Village Board of Trustees.</div>
         </div>
       </div>
+
       <div class="tl-item">
         <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
         <div>
@@ -666,13 +682,15 @@
           <div class="tl-desc">St. Viator posts on Facebook claiming construction will begin "late fall 2026 or early winter 2027" and a hearing is anticipated "this summer" — <strong>before the Village has confirmed any timeline.</strong> Approximately 50 neighbor yard signs stolen from private properties overnight. Police reports filed.</div>
         </div>
       </div>
+
       <div class="tl-item">
-        <div class="tl-spine"><div class="tl-dot pending"></div></div>
+        <div class="tl-spine"><div class="tl-dot pending"></div><div class="tl-line"></div></div>
         <div>
-          <div class="tl-date pending">TBD 2026</div>
+          <div class="tl-date pending">TBD 2026 — Anticipated</div>
           <div class="tl-desc"><strong>Public hearing expected.</strong> This is when community voices carry the most weight. Watch the Village project page for the confirmed date. No approval has been granted. St. Viator's timeline is their own stated assumption — not a Village determination.</div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -714,6 +732,7 @@
     <div class="section-eyebrow">Get Involved</div>
     <h2>How to Make Your Voice Heard</h2>
     <div class="action-grid">
+
       <div class="action-card">
         <div class="action-icon">
           <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
@@ -722,30 +741,26 @@
         <p>Add your name to the official Change.org petition. Every signature counts as a data point for the Village Board.</p>
         <a class="action-link" href="https://www.change.org/p/against-st-viator-backyard-stadium-project">Sign Now →</a>
       </div>
+
       <div class="action-card">
         <div class="action-icon">
-          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </div>
-        <h3>Contact the Village</h3>
-        <p>Visit the Village's official project page to find Plan Commission contacts, submit public comments, and track hearing dates.</p>
-        <a class="action-link" href="https://www.vah.com/government/departments/planning___community_development/developments___projects_/saint_viator_project.php">Village Project Page →</a>
+        <h3>Write to Village Officials</h3>
+        <p>A pre-drafted opposition letter is ready for you below — addressed directly to the Arlington Heights Plan Commission and Village Board. Personalize it with your name, address, and your own connection to Arlington Heights before sending.</p>
+        <div class="action-note">✏️ Please personalize your message before sending. Letters that include your connection to Arlington Heights and your specific concerns help Village officials better understand how this proposal would impact real residents and neighborhoods.</div>
+        <a class="action-link" href="mailto:planningmail@vah.com,jbertucci@vah.com,wdunnington@vah.com,rlabedz@vah.com,bmanganaro@vah.com,Csantamaria@vah.com,tschwingbeck@vah.com,Gzyck@vah.com,cgilbert@vah.com,jtinaglia@vah.com,rhitzemann@vah.com,mlysicatos@vah.com?subject=Please%20Oppose%20the%20Saint%20Viator%20Backyard%20Project&body=Dear%20Members%20of%20the%20Arlington%20Heights%20Plan%20Commission%20and%20Village%20Board%2C%0A%0AI%20am%20writing%20as%20an%20Arlington%20Heights%20resident%20%5Bof%20X%20years%5D%20to%20express%20my%20opposition%20to%20Saint%20Viator%20High%20School%27s%20proposed%20Backyard%20Project.%0A%0A%5BOPTIONAL%3A%20Add%201-3%20sentences%20about%20yourself%2C%20your%20family%2C%20your%20neighborhood%2C%20and%20why%20this%20issue%20matters%20to%20you%20personally.%5D%0A%0AWhile%20I%20respect%20Saint%20Viator%27s%20role%20in%20our%20community%20and%20support%20reasonable%20improvements%20to%20school%20facilities%2C%20I%20do%20not%20believe%20this%20proposal%20is%20appropriate%20for%20its%20location%20within%20an%20established%20residential%20neighborhood.%0A%0AThe%20proposed%20stadium%2C%20track%2C%20athletic%20fields%2C%20tennis%20courts%2C%20lighting%2C%20parking%2C%20and%20related%20facilities%20would%20significantly%20increase%20activity%2C%20traffic%2C%20noise%2C%20lighting%2C%20and%20congestion%20in%20an%20area%20that%20has%20long%20been%20residential%20in%20character.%0A%0AI%20am%20particularly%20concerned%20about%3A%0A%0A-%20Increased%20traffic%20and%20parking%20impacts%20on%20surrounding%20residential%20streets%0A-%20Noise%20from%20games%2C%20practices%2C%20events%2C%20and%20spectators%0A-%20Stadium%20and%20field%20lighting%20near%20homes%0A-%20The%20cumulative%20impact%20of%20year-round%20athletic%20activity%0A-%20The%20long-term%20effect%20on%20neighborhood%20character%20and%20quality%20of%20life%0A%0AI%20respectfully%20ask%20the%20Village%20to%20carefully%20consider%20whether%20a%20project%20of%20this%20scale%20is%20compatible%20with%20the%20surrounding%20neighborhood%20and%20whether%20the%20requested%20variances%20are%20justified.%0A%0AThank%20you%20for%20your%20time%2C%20service%2C%20and%20consideration.%0A%0ASincerely%2C%0A%0A%5BREQUIRED%3A%20FULL%20NAME%5D%0A%5BREQUIRED%3A%20STREET%20ADDRESS%5D%0AArlington%20Heights%2C%20IL%20%5BZIP%20CODE%5D">Open Pre-Drafted Letter →</a>
       </div>
+
       <div class="action-card">
         <div class="action-icon">
           <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
         </div>
         <h3>Attend the Public Hearing</h3>
-        <p>When the hearing is scheduled, showing up in person sends a powerful message. Watch the Village project page for the confirmed date.</p>
+        <p>When the hearing is scheduled, showing up in person sends a powerful message to the Village Board. Watch the Village project page for the confirmed date.</p>
         <a class="action-link" href="https://www.vah.com/government/departments/planning___community_development/developments___projects_/saint_viator_project.php">Check for Updates →</a>
       </div>
-      <div class="action-card">
-        <div class="action-icon">
-          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </div>
-        <h3>Write a Letter</h3>
-        <p>Formal written opposition letters to the Plan Commission become part of the permanent public record and carry real weight. Find contact info on the Village website.</p>
-        <a class="action-link" href="https://www.vah.com/government/departments/planning___community_development/developments___projects_/saint_viator_project.php">Find Contact Info →</a>
-      </div>
+
       <div class="action-card">
         <div class="action-icon">
           <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
@@ -754,6 +769,7 @@
         <p>Display your opposition visibly. Signs have already been stolen once — we're keeping them going. Email to purchase one for your home.</p>
         <a class="action-link" href="mailto:mefet@aol.com">Email mefet@aol.com →</a>
       </div>
+
       <div class="action-card">
         <div class="action-icon">
           <svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
@@ -762,6 +778,7 @@
         <p>Share this site with neighbors, on Nextdoor, and in community groups. Many Arlington Heights residents don't yet know what's being proposed.</p>
         <a class="action-link" href="#">Share This Page →</a>
       </div>
+
     </div>
   </div>
 </section>
@@ -771,7 +788,7 @@
   <p>
     Community Impact AH is a group of concerned Arlington Heights residents.<br>
     We are not affiliated with any political organization.<br>
-    Questions or want to get involved? <a href="mailto:mefet@aol.com">mefet@aol.com</a><br><br>
+    Questions or want to get involved? <a href="https://forms.gle/9eyn6h2ATynA2zC7A">Fill out our contact form</a><br><br>
     <a href="https://www.change.org/p/against-st-viator-backyard-stadium-project">Sign the Petition</a> &nbsp;·&nbsp;
     <a href="https://www.vah.com/government/departments/planning___community_development/developments___projects_/saint_viator_project.php">Village of Arlington Heights Project Page</a>
   </p>
