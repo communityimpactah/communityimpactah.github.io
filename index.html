@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community Impact AH — Oppose the St. Viator Stadium Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green-dark: #1C3D26;
+      --green-mid: #046A38;
+      --green-light: #86BC25;
+      --cream: #F5F2ED;
+      --amber: #BA7517;
+      --amber-bg: #FEF7E9;
+      --red: #A32D2D;
+      --red-bg: #FDF0F0;
+      --text: #1a1a1a;
+      --text-muted: #555;
+      --border: #ddd;
+      --white: #fff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* NAV */
+    nav {
+      background: var(--green-dark);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 0 5%;
+    }
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .nav-brand {
+      font-family: 'Playfair Display', serif;
+      color: #fff;
+      font-size: 17px;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+    .nav-brand span {
+      display: block;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--green-light);
+      font-weight: 600;
+      margin-top: 1px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--green-light); }
+
+    /* HERO */
+    .hero {
+      background: var(--green-dark);
+      padding: 80px 5% 72px;
+      border-bottom: 4px solid var(--green-light);
+    }
+    .hero-inner {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .hero-eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--green-light);
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(28px, 4vw, 46px);
+      line-height: 1.2;
+      color: #fff;
+      margin-bottom: 20px;
+      max-width: 720px;
+    }
+    .hero p {
+      font-size: 17px;
+      color: rgba(255,255,255,0.78);
+      max-width: 640px;
+      margin-bottom: 32px;
+      line-height: 1.75;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      background: var(--green-light);
+      color: var(--green-dark);
+      padding: 13px 28px;
+      border-radius: 3px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      transition: background 0.2s;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: #9fd42c; }
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 3px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      border: 1.5px solid rgba(255,255,255,0.4);
+      transition: border-color 0.2s, color 0.2s;
+      display: inline-block;
+    }
+    .btn-outline:hover { border-color: #fff; color: #fff; }
+
+    /* ALERT BANNER */
+    .alert-banner {
+      background: var(--amber-bg);
+      border-bottom: 3px solid var(--amber);
+      padding: 18px 5%;
+    }
+    .alert-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .alert-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--amber);
+      white-space: nowrap;
+      padding-top: 2px;
+    }
+    .alert-banner p {
+      font-size: 14px;
+      color: #5a3e00;
+      line-height: 1.6;
+    }
+    .alert-banner strong { font-weight: 600; }
+
+    /* SECTIONS */
+    section {
+      padding: 72px 5%;
+      border-bottom: 1px solid var(--border);
+    }
+    section:last-of-type { border-bottom: none; }
+    .section-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .section-eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--green-mid);
+      margin-bottom: 10px;
+    }
+    .section-inner h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(22px, 3vw, 32px);
+      color: var(--green-dark);
+      margin-bottom: 28px;
+      line-height: 1.25;
+    }
+
+    /* FACT GRID */
+    .fact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .fact-card {
+      background: var(--cream);
+      border-left: 4px solid var(--green-mid);
+      border-radius: 0 6px 6px 0;
+      padding: 20px 22px;
+    }
+    .fact-card-title {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--green-mid);
+      margin-bottom: 8px;
+    }
+    .fact-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* CONCERNS */
+    .concerns-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .concern {
+      background: #fafafa;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px 24px;
+    }
+    .concern h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--green-dark);
+      margin-bottom: 6px;
+    }
+    .concern p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* INCIDENT CALLOUT */
+    .incident-callout {
+      background: var(--red-bg);
+      border-left: 4px solid var(--red);
+      border-radius: 0 6px 6px 0;
+      padding: 20px 24px;
+      margin-bottom: 28px;
+    }
+    .incident-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 8px;
+    }
+    .incident-callout p {
+      font-size: 14px;
+      color: #5a1a1a;
+      line-height: 1.65;
+    }
+
+    /* SIGHTS & SOUNDS */
+    .sights-sounds {
+      background: var(--green-dark);
+    }
+    .sights-sounds .section-eyebrow { color: var(--green-light); }
+    .sights-sounds h2 { color: #fff; }
+    .sights-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .sights-text p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+    .sights-text p:last-child { margin-bottom: 0; }
+    .sights-pull {
+      border-left: 3px solid var(--green-light);
+      padding: 24px 28px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 0 6px 6px 0;
+    }
+    .sights-pull p {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      color: #fff;
+      line-height: 1.6;
+      font-style: italic;
+    }
+    .sights-pull .pull-attr {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 12px;
+      color: var(--green-light);
+      font-style: normal;
+      margin-top: 14px;
+      display: block;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    /* TIMELINE */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      max-width: 780px;
+    }
+    .tl-item {
+      display: flex;
+      gap: 20px;
+      padding-bottom: 28px;
+    }
+    .tl-item:last-child { padding-bottom: 0; }
+    .tl-spine {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 20px;
+      flex-shrink: 0;
+    }
+    .tl-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--green-mid);
+      flex-shrink: 0;
+      margin-top: 5px;
+    }
+    .tl-dot.pending { background: var(--amber); }
+    .tl-line {
+      width: 2px;
+      background: var(--border);
+      flex: 1;
+      margin-top: 6px;
+    }
+    .tl-item:last-child .tl-line { display: none; }
+    .tl-date {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--green-mid);
+      margin-bottom: 4px;
+    }
+    .tl-date.pending { color: var(--amber); }
+    .tl-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+    .tl-desc strong { color: var(--text); font-weight: 600; }
+
+    /* ACTION GRID */
+    .action-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .action-card {
+      background: var(--cream);
+      border-radius: 6px;
+      padding: 24px 22px;
+      border: 1px solid #e0ddd8;
+    }
+    .action-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--green-dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    .action-icon svg {
+      width: 18px;
+      height: 18px;
+      stroke: #fff;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .action-card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--green-dark);
+      margin-bottom: 6px;
+    }
+    .action-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+    .action-link {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--green-mid);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .action-link:hover { text-decoration: underline; }
+
+    /* VARIANCE SECTION */
+    .variance-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      max-width: 820px;
+    }
+    .variance-item {
+      border-left: 3px solid var(--green-light);
+      padding: 16px 20px;
+      background: var(--cream);
+      border-radius: 0 6px 6px 0;
+    }
+    .variance-item .v-label {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--green-mid);
+      margin-bottom: 6px;
+    }
+    .variance-item p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+    .variance-item .v-quote {
+      font-style: italic;
+      color: var(--text);
+      font-weight: 600;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--green-dark);
+      padding: 36px 5%;
+      text-align: center;
+    }
+    footer p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.8;
+    }
+    footer a {
+      color: var(--green-light);
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+
+    /* RESPONSIVE */
+    @media (max-width: 700px) {
+      .nav-links { display: none; }
+      .sights-block { grid-template-columns: 1fr; }
+      .hero { padding: 52px 5% 48px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">
+      Community Impact AH
+      <span>Arlington Heights, IL</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#facts">The Facts</a></li>
+      <li><a href="#concerns">Our Concerns</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#variances">Variances</a></li>
+      <li><a href="#act">Take Action</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Arlington Heights Community Notice</div>
+    <h1>Protect Our Community from the St. Viator Stadium Project</h1>
+    <p>St. Viator High School has applied to build a large-scale athletic complex — including a full stadium, 8-lane track, grandstands, permanent lighting, tennis courts, and expanded parking — directly bordering established residential neighborhoods in Arlington Heights. A public hearing is anticipated this summer. The time to act is now.</p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="https://www.change.org/p/against-st-viator-backyard-stadium-project">Sign the Petition</a>
+      <a class="btn-outline" href="https://www.vah.com/government/departments/planning___community_development/developments___projects_/saint_viator_project.php">Village of AH Project Page</a>
+    </div>
+  </div>
+</header>
+
+<!-- ALERT -->
+<div class="alert-banner">
+  <div class="alert-inner">
+    <div class="alert-label">⚠ Urgent</div>
+    <p>St. Viator has publicly stated a Village public hearing is anticipated <strong>later this summer 2026</strong>, with construction targeted for fall 2026. The Village has not confirmed this timeline. <strong>No variances have been approved.</strong> This is our window — every voice counts.</p>
+  </div>
+</div>
+
+<!-- FACTS -->
+<section id="facts">
+  <div class="section-inner">
+    <div class="section-eyebrow">What's Proposed</div>
+    <h2>The Facts About the Backyard Project</h2>
+    <div class="fact-grid">
+      <div class="fact-card">
+        <div class="fact-card-title">What It Includes</div>
+        <p>Competition and practice fields for football, soccer, and lacrosse; an 8-lane all-weather track; 8 tennis courts; home and visitor grandstands; permanent stadium lighting; concessions; restrooms; and expanded on-site parking.</p>
+      </div>
+      <div class="fact-card">
+        <div class="fact-card-title">Scale of Impact</div>
+        <p>St. Viator has referenced a 2,000-person stadium capacity. This is not a routine field upgrade — it is a large-scale, near year-round athletic complex requiring multiple zoning variances, situated directly adjacent to residential neighborhoods.</p>
+      </div>
+      <div class="fact-card">
+        <div class="fact-card-title">Who Uses It</div>
+        <p>Per St. Viator's own Director of Admissions, fewer than 25% of current students are local to Arlington Heights. The majority travel from as far as Chicago — meaning most users have no investment in our community streets or neighborhood safety.</p>
+      </div>
+      <div class="fact-card">
+        <div class="fact-card-title">Tax Status</div>
+        <p>St. Viator is a private, tax-exempt religious institution. It contributes zero property tax revenue to Arlington Heights — now or after construction. Granting these variances would benefit a private institution at the direct expense of tax-paying residents.</p>
+      </div>
+      <div class="fact-card">
+        <div class="fact-card-title">Problems Exist Today</div>
+        <p>Current St. Viator activity already generates overflow street parking on Oakton and Dryden, noise from daily practices and meets, and safety hazards from unmanaged student and visitor traffic — with no meaningful enforcement by school administrators.</p>
+      </div>
+      <div class="fact-card">
+        <div class="fact-card-title">Where Things Stand</div>
+        <p>The Special Use application was filed January 22, 2026. No variances have been approved. The Village is in active review. Multiple FOIA requests by residents for preliminary documents have been denied. St. Viator's stated construction timeline is their own assumption — not a Village confirmation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONCERNS -->
+<section id="concerns" style="background: #fafafa;">
+  <div class="section-inner">
+    <div class="section-eyebrow">Why We're Opposed</div>
+    <h2>Our Core Concerns</h2>
+
+    <div class="incident-callout">
+      <div class="incident-label">Recent Incident — May 2026</div>
+      <p>Approximately 50 neighbor yard signs were systematically stolen from private front yards overnight. Doorbell camera footage shows what appears to be a student-aged individual entering private yards around 2:40 AM, removing signs by hand, assisted by someone in a white Ford Explorer. Police reports have been filed. This behavior has been formally reported to the Village of Arlington Heights Plan Commission and Village Board. Regardless of who is ultimately responsible, neighbors feel targeted and intimidated for exercising their First Amendment rights.</p>
+    </div>
+
+    <div class="concerns-list">
+      <div class="concern">
+        <h3>Residential Character & Quality of Life</h3>
+        <p>The scale of this project means near year-round, daily activity — football, soccer, lacrosse, tennis, and track practices, plus games, tournaments, and marching band events. This is not 5 night games a year. Large crowds, stadium noise, and light pollution will permanently alter the character of the surrounding neighborhoods. Arlington Heights residents chose these communities specifically for their quiet, residential character.</p>
+      </div>
+      <div class="concern">
+        <h3>Traffic & Safety</h3>
+        <p>Oakton and Dryden are already dangerous during peak school hours — with screeching tires, illegal turns, and speeding on residential streets that St. Viator has done little to address despite years of resident complaints. A 2,000-person stadium will multiply the volume, duration, and unpredictability of that traffic. Opposing teams, unfamiliar visitors, and crowds who don't know Arlington Heights will cut through neighborhoods, park in front of homes, and turn around in driveways. Plans cannot account for people who ignore the rules.</p>
+      </div>
+      <div class="concern">
+        <h3>Parking Overflow</h3>
+        <p>St. Viator claims adequate on-site parking — but students already choose street parking over the lot today, for convenience. Athletic event visitors will do the same at far greater scale. Without strict, enforced no-parking zones on surrounding streets, overflow is inevitable. Off-site parking programs only work when enforced — and St. Viator's track record of enforcement is not encouraging.</p>
+      </div>
+      <div class="concern">
+        <h3>Noise & Light Pollution</h3>
+        <p>Neighbors can already hear the distant noise of Prospect and Hersey on game nights. Now put that same level of noise — high-volume speakers, PA systems, crowds, and music — at the center of our neighborhoods. Even today, music from St. Viator practices carries throughout the neighborhood despite school administrators claiming they tell coaches to keep it down. Permanent stadium lighting adjacent to homes will affect sleep, health, and daily quality of life for residents of all ages.</p>
+      </div>
+      <div class="concern">
+        <h3>Unenforced Promises</h3>
+        <p>The school's plan includes commitments on lighting, sound, traffic, and landscaping. But these are promises, not binding enforceable commitments. Once built, enforcement falls to the same institution that currently acknowledges noise violations and does nothing to stop them. "Best case scenario" assurances will not hold on a busy Friday night game.</p>
+      </div>
+      <div class="concern">
+        <h3>Property Values & Long-Term Precedent</h3>
+        <p>A stadium-adjacent address — with regular large crowds, nighttime events, and ongoing noise — creates real risk of reduced property values and buyer hesitation. And once approved, future expansions or increased permitted hours become far more likely, further eroding residents' ability to protect their community.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SIGHTS & SOUNDS -->
+<section class="sights-sounds" id="neighborhood">
+  <div class="section-inner">
+    <div class="section-eyebrow">Neighbor Sights &amp; Sounds</div>
+    <h2>What We're Fighting to Protect</h2>
+    <div class="sights-block">
+      <div class="sights-text">
+        <p>Arlington Heights is a community people move to with intention. Quiet cul-de-sacs. Kids riding bikes after school. Families gathering at parks on summer evenings. Neighbors who know each other's names and look out for each other.</p>
+        <p>The neighborhoods surrounding St. Viator are filled with that kind of life — families with young children, longtime residents who've built community here for decades, and newcomers who chose Arlington Heights for exactly what it is: a place where you can plant roots and feel safe.</p>
+        <p>That is what is at stake. Not just noise levels and traffic studies. The lived experience of a community that works — and the very real risk of permanently altering it for the benefit of a private, tax-exempt institution that contributes nothing financially to the city it wants to transform.</p>
+      </div>
+      <div class="sights-pull">
+        <p>"Friday driveway happy hours, meetups at Carriage Walk Park, fire pits and s'mores, pickup hockey in the cul-de-sac, riding bikes, and playing Ghost in the Graveyard at dusk. I want to continue raising my children in that neighborhood — where I feel safe with kids just being kids."</p>
+        <span class="pull-attr">— Arlington Heights resident, letter to the Plan Commission</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline">
+  <div class="section-inner">
+    <div class="section-eyebrow">Where Things Stand</div>
+    <h2>Project Timeline</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
+        <div>
+          <div class="tl-date">2022</div>
+          <div class="tl-desc">St. Viator first proposes a stadium complex. The Village requires written justification for Special Use Permit amendments. The project does not move forward at that time.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
+        <div>
+          <div class="tl-date">September 2025</div>
+          <div class="tl-desc">St. Viator presents preliminary plans at the Arlington Heights Plan Commission under the rebranded name "Backyard Project." Neighbors begin attending meetings and raising formal concerns.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
+        <div>
+          <div class="tl-date">December 3, 2025</div>
+          <div class="tl-desc">St. Viator hosts a neighborhood open house. 175 attendees. Formal opposition letters submitted to the Plan Commission and Village Board by multiple residents. <strong>FOIA requests for preliminary documents are subsequently denied.</strong></div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
+        <div>
+          <div class="tl-date">January 22, 2026</div>
+          <div class="tl-desc">St. Viator formally submits Special Use application to the Village of Arlington Heights. Active review begins with the Department of Planning &amp; Community Development.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
+        <div>
+          <div class="tl-date">Spring 2026</div>
+          <div class="tl-desc">Village review continues. No variance approvals granted. St. Viator and Village planning staff in active collaboration on technical refinements.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
+        <div>
+          <div class="tl-date">May 2026</div>
+          <div class="tl-desc">St. Viator posts on Facebook claiming construction will begin "late fall 2026 or early winter 2027" and a hearing is anticipated "this summer" — <strong>before the Village has confirmed any timeline.</strong> Approximately 50 neighbor yard signs stolen from private properties overnight. Police reports filed.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-spine"><div class="tl-dot pending"></div></div>
+        <div>
+          <div class="tl-date pending">Summer 2026 — Anticipated</div>
+          <div class="tl-desc"><strong>Public hearing expected.</strong> This is when community voices carry the most weight. Watch the Village project page for the confirmed date. No approval has been granted. St. Viator's timeline is their own stated assumption — not a Village determination.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VARIANCES -->
+<section id="variances" style="background: #fafafa;">
+  <div class="section-inner">
+    <div class="section-eyebrow">The Legal Standard</div>
+    <h2>Why This Project Fails Its Own Variance Requirements</h2>
+    <p style="max-width: 780px; margin-bottom: 28px; color: var(--text-muted); font-size: 15px;">For St. Viator to proceed, the Village must approve significant zoning variances. Arlington Heights' own ordinance establishes specific criteria each variance must satisfy. Residents believe this project fails to meet them.</p>
+    <div class="variance-list">
+      <div class="variance-item">
+        <div class="v-label">Variance Criterion 1</div>
+        <span class="v-quote">"The proposed use will not alter the essential character of the locality and will be compatible with existing uses and zoning of nearby property."</span>
+        <p>Everything about this project alters the essential character of the locality. The surrounding area is 100% residential. A 2,000-person stadium complex is incompatible with residential zoning by any reasonable interpretation.</p>
+      </div>
+      <div class="variance-item">
+        <div class="v-label">Variance Criterion 2</div>
+        <span class="v-quote">"That such use will not be detrimental to the health, safety, morals or general welfare of persons residing or working in the vicinity."</span>
+        <p>Increased traffic volume, noise, vibration, and light pollution directly adjacent to a residential community is, by definition, detrimental to the health, safety, and general welfare of residents. The current traffic conditions around the school are already a documented public safety concern.</p>
+      </div>
+      <div class="variance-item">
+        <div class="v-label">Variance Criterion 3</div>
+        <span class="v-quote">"That the special use is deemed necessary for the public convenience at this location."</span>
+        <p>A fenced-off sports complex serving a private, tax-exempt religious institution provides no public benefit. Not a single St. Viator representative at their open house could identify one public benefit of this project when asked directly by neighbors.</p>
+      </div>
+      <div class="variance-item">
+        <div class="v-label">Variance Criterion 4</div>
+        <span class="v-quote">"The variance requested is the minimum variance necessary to allow reasonable use of the property."</span>
+        <p>The property is already in active, reasonable use — outdoor sports teams currently practice there and baseball and softball host games. Approving a full stadium complex as a PUD in the heart of a residential community is far from the minimum variance necessary for reasonable use.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TAKE ACTION -->
+<section id="act">
+  <div class="section-inner">
+    <div class="section-eyebrow">Get Involved</div>
+    <h2>How to Make Your Voice Heard</h2>
+    <div class="action-grid">
+      <div class="action-card">
+        <div class="action-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h3>Sign the Petition</h3>
+        <p>Add your name to the official Change.org petition. Every signature counts as a data point for the Village Board.</p>
+        <a class="action-link" href="https://www.change.org/p/against-st-viator-backyard-stadium-project">Sign Now →</a>
+      </div>
+      <div class="action-card">
+        <div class="action-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <h3>Contact the Village</h3>
+        <p>Visit the Village's official project page to find Plan Commission contacts, submit public comments, and track hearing dates.</p>
+        <a class="action-link" href="https://www.vah.com/government/departments/planning___community_development/developments___projects_/saint_viator_project.php">Village Project Page →</a>
+      </div>
+      <div class="action-card">
+        <div class="action-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>Attend the Public Hearing</h3>
+        <p>When the hearing is scheduled, showing up in person sends a powerful message. Watch the Village project page for the confirmed date.</p>
+        <a class="action-link" href="https://www.vah.com/government/departments/planning___community_development/developments___projects_/saint_viator_project.php">Check for Updates →</a>
+      </div>
+      <div class="action-card">
+        <div class="action-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h3>Write a Letter</h3>
+        <p>Formal written opposition letters to the Plan Commission become part of the permanent public record and carry real weight. Find contact info on the Village website.</p>
+        <a class="action-link" href="https://www.vah.com/government/departments/planning___community_development/developments___projects_/saint_viator_project.php">Find Contact Info →</a>
+      </div>
+      <div class="action-card">
+        <div class="action-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Get a Yard Sign</h3>
+        <p>Display your opposition visibly. Signs have already been stolen once — we're keeping them going. Email to purchase one for your home.</p>
+        <a class="action-link" href="mailto:mefet@aol.com">Email mefet@aol.com →</a>
+      </div>
+      <div class="action-card">
+        <div class="action-icon">
+          <svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        </div>
+        <h3>Spread the Word</h3>
+        <p>Share this site with neighbors, on Nextdoor, and in community groups. Many Arlington Heights residents don't yet know what's being proposed.</p>
+        <a class="action-link" href="#">Share This Page →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    Community Impact AH is a group of concerned Arlington Heights residents.<br>
+    We are not affiliated with any political organization.<br>
+    Questions or want to get involved? <a href="mailto:mefet@aol.com">mefet@aol.com</a><br><br>
+    <a href="https://www.change.org/p/against-st-viator-backyard-stadium-project">Sign the Petition</a> &nbsp;·&nbsp;
+    <a href="https://www.vah.com/government/departments/planning___community_development/developments___projects_/saint_viator_project.php">Village of Arlington Heights Project Page</a>
+  </p>
+</footer>
+
+</body>
+</html>
