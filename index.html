@@ -487,6 +487,131 @@
     }
     footer a:hover { text-decoration: underline; }
 
+    /* NEIGHBORHOOD IMPACT */
+    .impact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .impact-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px 22px;
+    }
+    .impact-card.impact-danger {
+      border-color: #e8b4b4;
+      background: var(--red-bg);
+    }
+    .impact-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border-radius: 4px;
+      background: #e8f5ee;
+      color: var(--green-mid);
+      margin-bottom: 10px;
+    }
+    .impact-badge.badge-danger {
+      background: #f7dada;
+      color: var(--red);
+    }
+    .impact-card h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--green-dark);
+      margin-bottom: 8px;
+    }
+    .impact-card p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 8px;
+    }
+    .impact-card p:last-child { margin-bottom: 0; }
+    .street-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 10px;
+    }
+    .street-pill {
+      font-size: 11px;
+      background: #f0f0f0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 2px 8px;
+      color: var(--text-muted);
+    }
+    .street-pill.pill-danger {
+      background: #f7dada;
+      border-color: #e8b4b4;
+      color: var(--red);
+    }
+
+    .impact-card.impact-spotlight {
+      background: var(--amber-bg);
+      border: 1px solid #e8c97a;
+    }
+    .impact-badge.badge-spotlight {
+      background: #fdecc8;
+      color: var(--amber);
+    }
+    .impact-card.impact-spotlight h3 { color: #7a4a00; }
+    .impact-card.impact-spotlight p { color: #5a3800; }
+
+    /* FACT CHECK */
+    .record-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 900px;
+    }
+    .record-item {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .record-claim {
+      background: #fafafa;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .record-claim-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 5px;
+    }
+    .record-claim p {
+      font-size: 17px;
+      color: var(--text-muted);
+      font-style: italic;
+      line-height: 1.6;
+    }
+    .record-response {
+      background: var(--white);
+      padding: 16px 20px;
+    }
+    .record-response-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 5px;
+    }
+    .record-response p {
+      font-size: 16px;
+      color: var(--text);
+      line-height: 1.65;
+    }
+
     /* RESPONSIVE */
     @media (max-width: 700px) {
       .nav-links { display: none; }
@@ -515,6 +640,8 @@
     <ul class="nav-links">
       <li><a href="#facts">The Facts</a></li>
       <li><a href="#concerns">Our Concerns</a></li>
+      <li><a href="#affected">Who's Affected</a></li>
+      <li><a href="#factcheck">Fact Check</a></li>
       <li><a href="#timeline">Timeline</a></li>
       <li><a href="#variances">Variances</a></li>
       <li><a href="#act">Take Action</a></li>
@@ -542,7 +669,7 @@
 <div class="alert-banner">
   <div class="alert-inner">
     <div class="alert-label">⚠ Urgent</div>
-    <p>St. Viator has publicly stated a Village public hearing is anticipated <strong>later this summer 2026</strong>, with construction targeted for fall 2026. The Village has not confirmed this timeline. <strong>No variances have been approved.</strong> This is our window — every voice counts.</p>
+    <p>The Village Planning Department is still in active review with St. Viator. A Plan Commission hearing could come as early as <strong>late August 2026.</strong> Reminder that <strong>no variances have been approved.</strong> Trustees have indicated two of the most important things you can do is share data with the Planning Dept (e.g., photos, videos, evidence of existing issues) and show up to the meetings — both Plan Commission and the Village Board. Your voices and actions matter!</p>
   </div>
 </div>
 
@@ -585,11 +712,6 @@
   <div class="section-inner">
     <div class="section-eyebrow">Why We're Opposed</div>
     <h2>Our Core Concerns</h2>
-
-    <div class="incident-callout">
-      <div class="incident-label">Recent Incident — May 2026</div>
-      <p>Approximately 50 neighbor yard signs were stolen from private front yards overnight. Doorbell camera footage shows what appears to be an individual entering private yards around 2:40 AM, removing signs by hand, assisted by someone in a white Ford Explorer. Police reports have been filed and this behavior has been formally reported to the Village of Arlington Heights Plan Commission and Village Board.</p>
-    </div>
 
     <div class="concerns-list">
       <div class="concern">
@@ -639,11 +761,150 @@
   </div>
 </section>
 
+<!-- NEIGHBORHOOD IMPACT -->
+<section id="affected">
+  <div class="section-inner">
+    <div class="section-eyebrow">Who Is Affected</div>
+    <h2>How This Affects Your Neighborhood</h2>
+    <p style="max-width: 780px; margin-bottom: 28px; color: var(--text-muted); font-size: 16px;">The impacts of a project this size reach far beyond the streets immediately surrounding St. Viator. Here's what residents across Arlington Heights should know.</p>
+    <div class="impact-grid">
+
+      <div class="impact-card">
+        <div class="impact-badge">Directly Bordering</div>
+        <h3>Immediately Adjacent</h3>
+        <p>Residents on the streets directly bordering the school will face daily and nightly impacts from year-round practices, games, stadium lighting, PA systems, overflow parking, and significantly increased traffic on streets that are already strained.</p>
+        <div class="street-list">
+          <span class="street-pill">E Oakton St</span>
+          <span class="street-pill">N Dryden Ave</span>
+          <span class="street-pill">N Beverly Ln</span>
+          <span class="street-pill">E Frederick St</span>
+          <span class="street-pill">N Derbyshire Ave</span>
+          <span class="street-pill">N Derbyshire Dr</span>
+          <span class="street-pill">Carlyle Ln</span>
+          <span class="street-pill">E Viator Ct</span>
+          <span class="street-pill">E Hawthorne St</span>
+        </div>
+      </div>
+
+      <div class="impact-card">
+        <div class="impact-badge">Surrounding Corridors</div>
+        <h3>Dryden &amp; Oakton Corridor</h3>
+        <p>While Dryden and Oakton border the school directly, residents along these streets and their cross-streets who are not immediately adjacent should still expect increased daily commuter traffic, game-night surges, parking overflow, and real impacts on key intersections during peak hours. Expect to allow more time to traverse Dryden, Oakton, and other parallel streets like Olive and Euclid during peak hours.</p>
+        <div class="street-list">
+          <span class="street-pill">E Clarendon St</span>
+          <span class="street-pill">E Olive St</span>
+          <span class="street-pill">E Talbot St</span>
+          <span class="street-pill">E Marion St</span>
+          <span class="street-pill">E Jules St</span>
+          <span class="street-pill">N Hickory Ave</span>
+          <span class="street-pill">N Douglas Ave</span>
+          <span class="street-pill">N Carlyle Ct</span>
+          <span class="street-pill">N Windsor Dr</span>
+          <span class="street-pill">N Drury Ln</span>
+          <span class="street-pill">N Wilshire Ln</span>
+          <span class="street-pill">N Strafford Rd</span>
+          <span class="street-pill">N Pine Ave</span>
+          <span class="street-pill">N Belmont Ave</span>
+          <span class="street-pill">N Haddow Ave</span>
+        </div>
+      </div>
+
+      <div class="impact-card">
+        <div class="impact-badge">Surrounding Corridors</div>
+        <h3>Euclid Corridor</h3>
+        <p>Euclid serves as a key east-west connector between the school and surrounding neighborhoods. Increased cut-through traffic from visitors unfamiliar with Arlington Heights streets — heading to and from games and events — will push onto Euclid and its feeder streets, which are single-lane residential roads with minimal stop signs and no traffic lights.</p>
+      </div>
+
+      <div class="impact-card">
+        <div class="impact-badge">Broader Impact</div>
+        <h3>All of Arlington Heights</h3>
+        <p>St. Viator's own website describes this complex as a "hub of Catholic education" that will "welcome Catholic elementary and middle schools from across the region." This is not a school facility built for local students — it is a regional athletic destination that will bring non-residents into Arlington Heights streets regularly without any revenue flowing back to the community.</p>
+        <p>St. Viator also has a <strong>Facility Rental Request Form</strong> publicly listed on their website today — raising real questions about monetization of the complex. More rentals means more use, and more use means more traffic, more noise, and more outside visitors in our neighborhoods on an ongoing basis — with no financial benefit to the community that absorbs it.</p>
+      </div>
+
+      <div class="impact-card impact-spotlight" style="grid-column: 1 / -1;">
+        <div class="impact-badge badge-spotlight">Did You Know?</div>
+        <h3>St. James Church Area</h3>
+        <p>St. Viator's own published plan confirms: for events exceeding 1,200 attendees, they will use St. James Catholic Church as a remote parking facility with shuttle service. Residents near St. James should expect significant parking and traffic impacts on their streets on game days.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FACT CHECK -->
+<section id="factcheck" style="background: #fafafa;">
+  <div class="section-inner">
+    <div class="section-eyebrow">Fact Check</div>
+    <h2>The Facts Behind the Claims</h2>
+    <p style="max-width: 780px; margin-bottom: 28px; color: var(--text-muted); font-size: 16px;">St. Viator's website makes several claims that deserve scrutiny. Here are the facts — many drawn directly from the Village's own planning process and the firsthand experience of residents who live adjacent to the school.</p>
+    <div class="record-list">
+
+      <div class="record-item">
+        <div class="record-claim">
+          <div class="record-claim-label">St. Viator claims</div>
+          <p>"Daily school-day parking demand already fits within existing capacity."</p>
+        </div>
+        <div class="record-response">
+          <div class="record-response-label">The Reality</div>
+          <p>What St. Viator omits: students routinely choose to park on Oakton and Dryden rather than use the on-site lot — not because the lot is full, but because street parking is more convenient than waiting in lot traffic. The lot having available spaces does not mean the streets aren't already overwhelmed. A stadium-scale event will make this exponentially worse.</p>
+        </div>
+      </div>
+
+      <div class="record-item">
+        <div class="record-claim">
+          <div class="record-claim-label">St. Viator claims</div>
+          <p>"Fewer teen driver trips mean less cut-through congestion."</p>
+        </div>
+        <div class="record-response">
+          <div class="record-response-label">The Reality</div>
+          <p>This claim only addresses daytime school commutes. It ignores that events, games, and tournaments generate evening and weekend traffic — when residential streets are most active with children, families, and pedestrians. Trading daytime congestion for nighttime congestion in a residential neighborhood is not an improvement.</p>
+        </div>
+      </div>
+
+      <div class="record-item">
+        <div class="record-claim">
+          <div class="record-claim-label">St. Viator claims</div>
+          <p>"Providing proactive community notifications ahead of large gatherings such as Grandparents' Mass."</p>
+        </div>
+        <div class="record-response">
+          <div class="record-response-label">The Reality</div>
+          <p>Neighbors were not notified ahead of Grandparents' Mass or other large gatherings. This claim is directly contradicted by the firsthand experience of residents who live immediately adjacent to the school. There is no established notification system, and no demonstrated history of proactive outreach to the surrounding community.</p>
+        </div>
+      </div>
+
+      <div class="record-item">
+        <div class="record-claim">
+          <div class="record-claim-label">St. Viator claims</div>
+          <p>"Although not required, the school hosted a neighborhood open house on December 3, 2025."</p>
+        </div>
+        <div class="record-response">
+          <div class="record-response-label">The Reality</div>
+          <p>A neighborhood open house is a standard requirement of the Village of Arlington Heights' planning process for projects of this type. Framing it as optional misrepresents the process and overstates the school's commitment to community engagement.</p>
+        </div>
+      </div>
+
+      <div class="record-item">
+        <div class="record-claim">
+          <div class="record-claim-label">St. Viator claims</div>
+          <p>"These spaces will also welcome Catholic elementary and middle schools across the region."</p>
+        </div>
+        <div class="record-response">
+          <div class="record-response-label">The Reality</div>
+          <p>St. Viator is asking the Village to approve zoning variances for what they describe as a school facility — but their own website confirms this complex is intended to serve as a regional hub for Catholic schools across the area. Combined with a Facility Rental Request Form already listed on their site, the scope of this project extends well beyond what a typical high school athletic facility would generate in traffic, activity, and neighborhood impact.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- TIMELINE -->
 <section id="timeline">
   <div class="section-inner">
     <div class="section-eyebrow">Where Things Stand</div>
     <h2>Project Timeline</h2>
+    <p style="max-width: 780px; margin-bottom: 28px; color: var(--text-muted); font-size: 15px;">Reminder that no approvals have been granted. St. Viator's stated construction timeline is their own assumption — not a Village determination.</p>
     <div class="timeline">
 
       <div class="tl-item">
@@ -695,10 +956,18 @@
       </div>
 
       <div class="tl-item">
+        <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
+        <div>
+          <div class="tl-date">August 2026</div>
+          <div class="tl-desc">As of July 2026, the Village Planning Department is still in active review with St. Viator. In order to prepare for any upcoming Village meetings, the Community Impact AH neighborhood group is meeting on <strong>Wednesday August 12, 2026 at 6:30PM at the Arlington Heights Memorial Library.</strong> We look forward to continuing to organize as a broader concerned community.</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
         <div class="tl-spine"><div class="tl-dot pending"></div><div class="tl-line"></div></div>
         <div>
-          <div class="tl-date pending">TBD 2026 — Anticipated</div>
-          <div class="tl-desc"><strong>Public hearing expected.</strong> This is when community voices carry the most weight. Watch the Village project page for the confirmed date. No approval has been granted. St. Viator's timeline is their own stated assumption — not a Village determination.</div>
+          <div class="tl-date pending">Late Summer / Early Fall 2026 — Anticipated</div>
+          <div class="tl-desc">Public hearings could begin as early as the end of August. Watch the <a href="https://www.vah.com/government/departments/planning___community_development/developments___projects_/saint_viator_project.php" style="color: var(--amber);">Village project page</a> for the confirmed date. This is when community voices carry the most weight. <strong>Showing up and speaking could determine the future of our neighborhood.</strong> If you're interested in joining the group efforts to speak on specific topics, please complete this brief interest form, <a href="https://forms.gle/1CsMCh4H7Ro688ny9" style="color: var(--amber);">linked here</a>.</div>
         </div>
       </div>
 
@@ -769,7 +1038,8 @@
         </div>
         <h3>Attend the Public Hearing</h3>
         <p>When the hearing is scheduled, showing up in person sends a powerful message to the Village Board. Watch the Village project page for the confirmed date.</p>
-        <a class="action-link" href="https://www.vah.com/government/departments/planning___community_development/developments___projects_/saint_viator_project.php">Check for Updates →</a>
+        <a class="action-link" href="https://www.vah.com/government/departments/planning___community_development/developments___projects_/saint_viator_project.php">Check for Updates →</a><br><br>
+        <a class="action-link" href="https://forms.gle/1CsMCh4H7Ro688ny9">Interested in Speaking at a Village Meeting →</a>
       </div>
 
       <div class="action-card">
